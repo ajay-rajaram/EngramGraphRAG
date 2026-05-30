@@ -1,0 +1,29 @@
+# Data stores — never commit
+data/
+logs/logfiles/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit real credentials
+.env
+config.toml
+config.local.toml
+
+# Keep empty data dir
+!data/.gitkeep
+!logs/.gitkeep

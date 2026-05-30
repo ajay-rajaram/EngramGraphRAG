@@ -1,0 +1,27 @@
+[ollama]
+# Model aliases — change these to match your Ollama setup
+default  = "qwen2.5:7b-instruct"
+passagener = "qwen2.5:7b-instruct"   # passage NER (indexing step 1)
+queryner   = "qwen2.5:7b-instruct"   # query NER (retrieval step 1)
+oie        = "qwen2.5:7b-instruct"   # OpenIE triple extraction (indexing step 2)
+ragqa      = "qwen2.5:7b-instruct"   # RAG QA answering (retrieval step 7)
+
+[database]
+# PostgreSQL for passage text storage
+host     = "localhost"
+port     = 5432
+name     = "engramgraphrag"
+user     = "YOUR_DB_USER"
+password = "YOUR_DB_PASSWORD"
+
+[graph]
+# KuzuDB embedded graph database
+path = "data/graph/database.kz"
+
+[qdrant]
+# Qdrant local vector store for synonym edges
+path = "data/qdrant"
+collection = "kg_nodes"
+vector_size = 384
+embed_model = "all-minilm:latest"
+synonym_threshold = 0.8

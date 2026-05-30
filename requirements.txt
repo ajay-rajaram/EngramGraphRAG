@@ -1,0 +1,18 @@
+# Core graph + vector
+kuzu>=0.11.0
+igraph>=0.11.0
+qdrant-client>=1.9.0
+
+# LLM + embeddings (local via Ollama)
+ollama>=0.2.0
+
+# PostgreSQL
+psycopg2-binary>=2.9.0
+
+# Document ingestion
+PyMuPDF>=1.24.0        # PDF parsing
+python-docx>=1.1.0     # DOCX parsing
+tiktoken>=0.7.0        # token counting
+
+# Config
+toml>=0.10.2
