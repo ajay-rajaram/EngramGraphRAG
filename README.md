@@ -1,6 +1,6 @@
 # EngramGraphRAG
 
-> **Graph-native RAG powered by KuzuDB, igraph PPR, and local LLMs — fully airgapped, no cloud required.**
+> **Graph-native RAG powered by KuzuDB, igraph PPR, and local LLMs **
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![KuzuDB](https://img.shields.io/badge/graph-KuzuDB-orange.svg)](https://kuzudb.com/)
