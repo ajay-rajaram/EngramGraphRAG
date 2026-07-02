@@ -55,7 +55,6 @@ Inspired by [HippoRAG (NeurIPS 2024)](https://arxiv.org/abs/2405.14831), rebuilt
 - **KuzuDB** instead of NetworkX — persistent, queryable via Cypher, visualisable
 - **Predicate-frequency weighted PPR** — our key innovation over the original paper
 - **all-minilm local embeddings** — synonym edges via Qdrant, CPU only
-- **Fully airgapped** — Ollama for everything, zero external API calls
 
 ---
 
